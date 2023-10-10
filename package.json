@@ -1,0 +1,18 @@
+{
+  "name": "gtfs-c",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "@octokit/core": "^5.0.1",
+    "axios": "^1.5.1",
+    "jszip": "^3.10.1",
+    "node-fetch": "^2.7.0",
+    "octokit": "^3.1.1"
+  },
+  "author": "benjamin-del",
+  "license": "ISC",
+  "description": ""
+}
