@@ -1,0 +1,14 @@
+name: Sunday Job
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Run every Sunday at midnight UTC
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Update Files
+      run: node index.js
