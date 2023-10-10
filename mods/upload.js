@@ -4,13 +4,14 @@ const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
 module.exports = {
     push: async function(file,payload) {
+        try {
         const request = await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
             owner: config.owner,
             repo: config.repo,
             path: file,
-            message: 'my commit message',
+            message: 'Update ' + file + ' via GH API',
             committer: {
-              name: config.owner + " (via GH API)",
+              name: config.owner + " (API)",
               email: config.email
             },
             content: payload.content,
@@ -20,5 +21,10 @@ module.exports = {
             }
           })
           
+        } catch (err) {
+            console.log("HELPER (UPLOAD): Error pushing file")
+            console.log(err)
+            return ""
+        }
     }
 }

@@ -15,6 +15,8 @@ module.exports = {
             })
             return request.data.sha
         } catch (err) {
+            console.log("HELPER (GET-SHA): Error getting SHA")
+            console.log(err)
             return ""
         }
     }

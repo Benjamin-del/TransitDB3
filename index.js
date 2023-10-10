@@ -29,7 +29,8 @@ async function prepfile() {
     
     console.log("UPDATE (TRIPS): Uploading to GH...")
     const tps_j = tps.join("\n")
-    gh.push("trips.txt", {
+    console.log(sha)
+    gh.push("1.txt", {
         sha: sha,
         content: Buffer.from(tps_j).toString('base64')
     })
