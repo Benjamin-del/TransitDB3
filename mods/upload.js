@@ -1,6 +1,6 @@
 const { Octokit } = require("@octokit/core");
 const config = require("./../gh_config.json");
-const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+const octokit = new Octokit({ auth: "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" });
 
 module.exports = {
     push: async function(file,payload) {
