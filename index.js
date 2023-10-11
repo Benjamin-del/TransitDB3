@@ -1,4 +1,5 @@
 const { Octokit } = require("@octokit/core");
+require('dotenv').config()
 
 // My Modules
 const download = require('./mods/dwldr');
@@ -30,7 +31,7 @@ async function prepfile() {
     console.log("UPDATE (TRIPS): Uploading to GH...")
     const tps_j = tps.join("\n")
     console.log(sha)
-    gh.push("1.txt", {
+    gh.push("trips.txt", {
         sha: sha,
         content: Buffer.from(tps_j).toString('base64')
     })
