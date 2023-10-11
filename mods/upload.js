@@ -1,6 +1,6 @@
 const { Octokit } = require("@octokit/core");
 const config = require("./../gh_config.json");
-const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+const octokit = new Octokit({ auth: process.env.GH_TOKEN });
 
 module.exports = {
     push: async function (file, payload) {
@@ -12,7 +12,7 @@ module.exports = {
                 path: file,
                 message: 'Update ' + file + ' via GH API',
                 committer: {
-                    name: '(API) GTFS-C',
+                    name: '[GTFC WKLFW] ' + config.owner,
                     email: process.env.email
                 },
                 content: payload.content,

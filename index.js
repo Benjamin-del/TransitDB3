@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 // My Modules
-const download = require('dwldr');
+const download = require('./mods/dwldr');
 const getsha = require('./mods/getsha');
 const gh = require("./mods/upload")
 
