@@ -7,10 +7,14 @@ module.exports = {
         console.log()
         try {
             const request = await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
-                owner: "Benjamin-Del",
+                owner: config.owner,
                 repo: "gtfsc",
                 path: file,
                 message: 'Update ' + file + ' via GH API',
+                committer: {
+                    name: '(API) GTFS-C',
+                    email: process.env.email
+                },
                 content: payload.content,
                 sha: payload.sha,
                 headers: {

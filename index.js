@@ -1,8 +1,7 @@
-const { Octokit } = require("@octokit/core");
 require('dotenv').config()
 
 // My Modules
-const download = require('./mods/dwldr');
+const download = require('dwldr');
 const getsha = require('./mods/getsha');
 const gh = require("./mods/upload")
 
