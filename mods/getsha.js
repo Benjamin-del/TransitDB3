@@ -8,7 +8,7 @@ module.exports = {
             const request = await octokit.request('GET /repos/{owner}/{repo}/contents/{path}', {
                 owner: config.owner,
                 repo: config.repo,
-                path: file,
+                path: "gtfs/" + file,
                 headers: {
                     'X-GitHub-Api-Version': '2022-11-28'
                 }
