@@ -1,23 +1,13 @@
 const { Octokit } = require("@octokit/core");
 const config = require("./../gh_config.json");
+const fs = require('fs');
 
 module.exports = {
-    push: async function (file, payload) {
+    push: async function (file, data) {
         try {
-            const octokit = new Octokit({ auth: payload.token });
-
-            const request = await octokit.request('PUT /repos/{owner}/{repo}/contents/{path}', {
-                owner: config.owner,
-                repo: "gtfsc",
-                path: "gtfs/" + file,
-                message: 'Update ' + file + ' via GH API',
-                content: payload.content,
-                sha: payload.sha,
-                headers: {
-                    'X-GitHub-Api-Version': '2022-11-28'
-                }
-            })
-            console.log("HELPER (UPLOAD): Response Code: " + request.status)
+            //const octokit = new Octokit({ auth: payload.token });
+            fs.writeFileSync("gtfs/" + file, data)
+            console.log("HELPER (UPLOAD): File written to disk")
             //console.log(request)
             return
         } catch (err) {

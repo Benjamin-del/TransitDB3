@@ -1,9 +1,5 @@
 require('dotenv').config()
-
-// Config Vars
-
 // My Modules
-const getsha = require('./mods/getsha');
 const gh = require("./mods/upload")
 
 // Condense modules 
@@ -34,25 +30,12 @@ process.argv.forEach(async (x)=>{
         }
     }
 })
-// Check variables
-if (token === "") {
-    throw new Error('Token is not defined');
-} 
 
 //prepfile()
 async function prepfile(file,data) {
     console.log("UPDATE (" + file + "): Condensing File...")
-    console.log("UPDATE (" + file + "): Condensed File")
-    const sha = await getsha.get(file)
-    
-    console.log("UPDATE (" + file + "): Uploading to GH...")
     const joined_data = data.join("\n")
-    //console.log(sha)
-    await gh.push(file, {
-        sha: sha,
-        content: Buffer.from(joined_data).toString('base64'),
-        token: token
-    })
-
+    console.log("UPDATE (" + file + "): Condensed File")
+    await gh.push(file, joined_data)
     console.log("UPDATE (TRIPS): File uploaded! ")
 }

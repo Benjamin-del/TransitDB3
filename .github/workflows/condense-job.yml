@@ -1,4 +1,4 @@
-name: Update Files
+name: Condense Files & Upload
 
 on:
   schedule:
@@ -12,11 +12,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Update trips.txt
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      run: node index.js token="${{ env.GH_TOKEN }}" file=trips.txt
-    - name: Update stop_times.txt
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      run: node index.js token="${{ env.GH_TOKEN }}" file=stop_times.txt
+      run: node index.js file=trips.txt
+    - uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: gtfs/
+    
       
