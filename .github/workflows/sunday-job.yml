@@ -11,5 +11,5 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Update Files
-      run: node index.js
+    - name: Update Trip
+      run: node index.js token=${{github.token}}

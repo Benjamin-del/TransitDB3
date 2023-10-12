@@ -4,7 +4,18 @@ require('dotenv').config()
 const download = require('./mods/dwldr');
 const getsha = require('./mods/getsha');
 const gh = require("./mods/upload")
-
+//console.log(process.argv)
+var token = ""
+process.argv.forEach((x)=>{
+    const dts = x.split("=")
+    if(dts[0] === "token" && dts[1] !== "env") {
+        token = dts[1]
+    } else if (dts[0] === "token" && dts[1] === "env") {
+        console.log("ENV TOKEN")
+        token = process.env.GH_TOKEN
+    }
+})
+console.log("TOKEN", !token === "")
 prepfile()
 async function prepfile() {
     console.log("UPDATE (TRIPS): Condensing File...")
@@ -29,10 +40,11 @@ async function prepfile() {
     
     console.log("UPDATE (TRIPS): Uploading to GH...")
     const tps_j = tps.join("\n")
-    console.log(sha)
+    //console.log(sha)
     gh.push("trips.txt", {
         sha: sha,
-        content: Buffer.from(tps_j).toString('base64')
+        content: Buffer.from(tps_j).toString('base64'),
+        token: token
     })
 
     console.log("UPDATE (TRIPS): File uploaded! ")
