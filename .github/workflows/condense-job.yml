@@ -13,13 +13,13 @@ jobs:
       uses: actions/checkout@v2
     - name: Update trips.txt
       run: node index.js file=trips.txt
+    - name: Update trips.txt
+      run: node index.js file=stop_times.txt
     - name: Commit and push changes
       run: |
-        git config --global user.name "Benjamin-Del"
+        git config --global user.name "${{ github.actor }} [Via GitHub Actions]"
         git config --global user.email "${{ secrets.EMAIL }}"
   
         git add -A
-        git commit -m "commit message"
+        git commit --allow-empty -m "Update files via API"
         git push
-            
-      
