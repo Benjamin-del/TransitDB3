@@ -1,9 +1,14 @@
-name: Condense Files & Upload
+# (c) 2023 Benjamin-Del
+
+
+name: Update GTFS database
+run-name: Update GTFS database
 
 on:
   schedule:
     - cron: '0 0 * * 0' # Run every Sunday at midnight UTC
   workflow_dispatch:
+  push:
     
 jobs:
   run-script:
