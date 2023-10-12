@@ -13,6 +13,7 @@ on:
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    name:  Update GTFS database
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
