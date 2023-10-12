@@ -17,8 +17,8 @@ jobs:
       uses: test-room-7/action-update-file@v1
       with:
           file-path: |
-              gtfs/trips.txt
-              gtfs/stop_times.txt
+              /gtfs/trips.txt
+              /gtfs/stop_times.txt
           commit-msg: Update resources (Via GitHub Actions)
           github-token: ${{ secrets.GH_TOKEN }}
           
