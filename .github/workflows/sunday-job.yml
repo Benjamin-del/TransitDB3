@@ -1,4 +1,4 @@
-name: Sunday Job
+name: Update Files
 
 on:
   schedule:
