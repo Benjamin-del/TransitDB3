@@ -19,6 +19,7 @@ module.exports = {
                 }
             })
             console.log("HELPER (UPLOAD): Response Code: " + request.status)
+            console.log(request)
         } catch (err) {
             console.log("HELPER (UPLOAD): Error pushing file")
             console.log(err)
