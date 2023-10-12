@@ -24,7 +24,7 @@ jobs:
     - name: Update stops.txt
       run: node index.js file=stops.txt
     - name: Finsh Update
-      run: node finish.js
+      run: node update.js
     - name: Commit and push changes
       run: |
         git config --global user.name "${{ github.actor }} [Via GitHub Actions]"
