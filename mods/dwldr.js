@@ -8,7 +8,7 @@ module.exports = {
             const zipFileResponse = await fetch("https://www.octranspo.com/files/google_transit.zip");
 
             // Check if the fetch was successful
-            console.log("HELPER (STATUS)",zipFileResponse.status)
+            console.log("HELPER (GTFS-DWLDR) File returned with code: ",zipFileResponse.status)
             if (!zipFileResponse.code === 200) {
                 console.log("HELPER (GTFS-DWLDR) ERROR : " + zipFileResponse.status);
                 return "ERROR- (f)" + zipFileResponse.status
