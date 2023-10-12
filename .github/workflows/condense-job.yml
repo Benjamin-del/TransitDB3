@@ -15,7 +15,7 @@ jobs:
       run: node index.js file=trips.txt
     - name: Commit and push changes
       run: |
-        git config --global user.name "${{ github.actor }} (API)"
+        git config --global user.name "Benjamin-Del"
         git config --global user.email "${{ secrets.EMAIL }}"
   
         git add -A
