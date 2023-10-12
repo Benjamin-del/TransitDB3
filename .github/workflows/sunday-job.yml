@@ -12,4 +12,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Update Trip
-      run: node index.js token=${{github.token}}
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: node index.js token="${{ env.GH_TOKEN }}"
