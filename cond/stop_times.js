@@ -11,9 +11,9 @@ module.exports = {
             const dts = x.split(",")
             if (dts[0]) {
             // Modify Collunms
-            //const tp_id = dts[0].split("-")[0]
+            const tp_id = dts[0].split("-")[0]
             //console.log(tp_id)
-            return dts[0] + "," + dts[1] + "," + dts[3] + "," +  dts[4]
+            return tp_id + "," + dts[1] + "," + dts[3] + "," +  dts[4]
             
             } else {
                 return ""
