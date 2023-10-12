@@ -1,5 +1,5 @@
 var JSZip = require("jszip");
-const config = require("../gh_config.json")
+
 module.exports = {
     file: async function (file) {
         try {
@@ -8,6 +8,7 @@ module.exports = {
             const zipFileResponse = await fetch("https://www.octranspo.com/files/google_transit.zip");
 
             // Check if the fetch was successful
+            console.log("HELPER (STATUS)",zipFileResponse.code)
             if (!zipFileResponse.code === 200) {
                 console.log("HELPER (GTFS-DWLDR) ERROR : " + zipFileResponse.status);
                 return "ERROR- (f)" + zipFileResponse.status
