@@ -12,10 +12,6 @@ module.exports = {
                 repo: "gtfsc",
                 path: file,
                 message: 'Update ' + file + ' via GH API',
-                committer: {
-                    name: '[GTFC WKLFW] ' + config.owner,
-                    email: process.env.email
-                },
                 content: payload.content,
                 sha: payload.sha,
                 headers: {
