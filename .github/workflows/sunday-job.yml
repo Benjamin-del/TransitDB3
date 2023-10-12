@@ -11,7 +11,16 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Update Trip
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+    - name: Update trips.txt
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      run: node index.js token="${{ env.GH_TOKEN }}"
+      run: node index.js token="${{ env.GH_TOKEN }}" file=trips.txt
+    - name: Update stop_times.txt
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: node index.js token="${{ env.GH_TOKEN }}" file=stop_times.txt
+      

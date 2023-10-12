@@ -3,7 +3,6 @@ const config = require("./../gh_config.json");
 
 module.exports = {
     push: async function (file, payload) {
-        console.log()
         try {
             const octokit = new Octokit({ auth: payload.token });
 
@@ -19,7 +18,8 @@ module.exports = {
                 }
             })
             console.log("HELPER (UPLOAD): Response Code: " + request.status)
-            console.log(request)
+            //console.log(request)
+            return
         } catch (err) {
             console.log("HELPER (UPLOAD): Error pushing file")
             console.log(err)

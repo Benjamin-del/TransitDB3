@@ -48,7 +48,7 @@ async function prepfile(file,data) {
     console.log("UPDATE (" + file + "): Uploading to GH...")
     const joined_data = data.join("\n")
     //console.log(sha)
-    gh.push("trips.txt", {
+    await gh.push(file, {
         sha: sha,
         content: Buffer.from(joined_data).toString('base64'),
         token: token
