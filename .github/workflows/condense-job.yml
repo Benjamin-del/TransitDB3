@@ -15,6 +15,16 @@ jobs:
       run: node index.js file=trips.txt
     - name: Update trips.txt
       run: node index.js file=stop_times.txt
+    - name: Update calendar.txt
+      run: node index.js file=calendar.txt
+    - name: Update routes.txt
+      run: node index.js file=routes.txt
+    - name: Update shapes.txt
+      run: node index.js file=shapes.txt
+    - name: Update stops.txt
+      run: node index.js file=stops.txt
+    - name: Finsh Update
+      run: node finish.js
     - name: Commit and push changes
       run: |
         git config --global user.name "${{ github.actor }} [Via GitHub Actions]"
