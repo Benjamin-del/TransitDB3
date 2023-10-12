@@ -13,13 +13,13 @@ jobs:
       uses: actions/checkout@v2
     - name: Update trips.txt
       run: node index.js file=trips.txt
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "${{ github.actor }}}}"
-        git config --global user.email "${{ secrets.EMAIL}}"
-  
-        git add -A
-        git commit -m "Update files (auto commit by Actions)"
-        git push
-      
+    - name: Update resources
+      uses: test-room-7/action-update-file@v1
+      with:
+          file-path: |
+              gtfs/trips.txt
+              gtfs/stop_times.txt
+          commit-msg: Update resources (Via GitHub Actions)
+          github-token: ${{ secrets.GH_TOKEN }}
+          
       
