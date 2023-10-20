@@ -14,8 +14,9 @@ module.exports = {
                 // Modify Collunms
                 const rt_id = dts[0].split("-")[0]
                 const tp_id = dts[2].split("-")[0]
+                //route_id,service_id,trip_id,trip_headsign,direction_id,block_id,shape_id
                 //route_id,service_id,trip_id,direction_id,shape_id
-                return rt_id + "," + dts[1] + "," + tp_id + "," + dts[4] + "," + dts[6]
+                return rt_id + "," + dts[1] + "," + tp_id + "," + dts[3] + "," + dts[4] + "," + dts[6]
             } else {
                 return ""
             }
