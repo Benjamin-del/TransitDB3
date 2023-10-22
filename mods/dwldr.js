@@ -1,11 +1,21 @@
 var JSZip = require("jszip");
 
 module.exports = {
-    file: async function (file) {
+    file: async function (file, ag) {
         try {
             console.log("HELPER (GTFS-DWLDR): Fetching file: " + file)
             // Fetch the ZIP file from the URL
-            const zipFileResponse = await fetch("https://www.octranspo.com/files/google_transit.zip");
+
+            function getURL() {
+                if (ag === "oct") {
+                    return "https://www.octranspo.com/files/google_transit.zip"
+                } else if (ag === "sto") {
+                    return "http://www.contenu.sto.ca/GTFS/GTFS.zip"
+                } else {
+                    throw new Error("HELPER (GTFS-DWLDR): ERROR: Invalid Agency")
+                }
+            }
+            const zipFileResponse = await fetch(getURL());
 
             // Check if the fetch was successful
             console.log("HELPER (GTFS-DWLDR) File returned with code: ",zipFileResponse.status)

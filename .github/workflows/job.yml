@@ -18,25 +18,29 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Update trips.txt
-      run: node index.js file=trips.txt
-    - name: Update stop_times.txt
-      run: node index.js file=stop_times.txt
-    - name: Update calendar.txt
-      run: node index.js file=calendar.txt
-    - name: Update routes.txt
-      run: node index.js file=routes.txt
-    - name: Update shapes.txt
-      run: node index.js file=shapes.txt
-    - name: Update stops.txt
-      run: node index.js file=stops.txt
-    - name: Finsh Update
+    - name: Update OC Transpo Data
+      run: |
+        node oct.js file=trips.txt
+        node oct.js file=stop_times.txt
+        node oct.js file=calendar.txt
+        node oct.js file=routes.txt
+        node oct.js file=shapes.txt
+        node oct.js file=stops.txt
+    - name: Update STO Data
+      run: |
+        node sto.js file=trips.txt
+        node sto.js file=stop_times.txt
+        node sto.js file=calendar_dates.txt
+        node sto.js file=routes.txt
+        node sto.js file=shapes.txt
+        node sto.js file=stops.txt
+    - name: Finish Update
       run: node update.js
-    - name: Commit and push changes
+    - name: Push Update
       run: |
         git config --global user.name "${{ github.actor }} [Via GitHub Actions]"
         git config --global user.email "${{ secrets.EMAIL }}"
   
         git add -A
-        git commit --allow-empty -m "Update files via API"
+        git commit --allow-empty -m "Update files via GH Actions"
         git push
