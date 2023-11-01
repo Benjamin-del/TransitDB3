@@ -38,7 +38,7 @@ jobs:
       run: |
         node via.js file=trips.txt
         node via.js file=stop_times.txt
-        node via.js file=calendar_dates.txt
+        node via.js file=calendar.txt
         node via.js file=routes.txt
         node via.js file=shapes.txt
         node via.js file=stops.txt
