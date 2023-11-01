@@ -34,6 +34,14 @@ jobs:
         node sto.js file=routes.txt
         node sto.js file=shapes.txt
         node sto.js file=stops.txt
+    - name: Update VIA Data
+      run: |
+        node via.js file=trips.txt
+        node via.js file=stop_times.txt
+        node via.js file=calendar_dates.txt
+        node via.js file=routes.txt
+        node via.js file=shapes.txt
+        node via.js file=stops.txt
     - name: Finish Update
       run: node update.js
     - name: Push Update
