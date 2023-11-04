@@ -3,20 +3,23 @@ require('dotenv').config()
 const gh = require("./mods/upload")
 
 // Condense modules 
-const trips = require("./cond/via_trips")
+//const trips = require("./cond/via_trips")
 const stop_times = require("./cond/via_stop_times")
 const download = require("./mods/dwldr")
+
+/* VIA TRIPS IS ALREADY CONDENSED */
 
 process.argv.forEach(async (x)=>{
     const dts = x.split("=")
     if (dts[0] === "file") {
         console.log("UPDATE (INDEX): File passed to args")
-        if (dts[1] === "trips.txt" || dts[1] === "stop_times.txt") {
+        if (/*dts[1] === "trips.txt" || */dts[1] === "stop_times.txt") {
             console.log("UPDATE (INDEX): Condensing File...")
-            if (dts[1] === "trips.txt") {             /* Special file trips.txt */
+            /* VIA DOSEN'T NEED TO BE CONDENSED */
+           /* if (dts[1] === "trips.txt") {             
                 const tps = await trips.parse()
                 prepfile("trips.txt",tps)
-            } else if (dts[1] === "stop_times.txt") { /* Special file stop_times.txt */
+            } else */if (dts[1] === "stop_times.txt") { /* Special file stop_times.txt */
                 const tms = await stop_times.parse()
                 prepfile("stop_times.txt",tms)
             } 
