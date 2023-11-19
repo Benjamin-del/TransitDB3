@@ -8,8 +8,16 @@ route_id,service_id,trip_id,shape_id,trip_short_name,trip_headsign,direction_id
 119-618,490,490,490,75,Windsor,0
 119-93,491,491,491,81,London,0
 119-618,492,492,492,70,Toronto,1
+TDCQ,542,542,542,,Baie-Saint-Paul,0
+TDCQ,543,543,543,,Baie-Saint-Paul,0
 617-628,540,540,540,624,Québec,0
 617-628,541,541,541,26,Québec,0
+TDCQ,546,546,546,,Québec (Chutes-Montmorency),1
+TDCQ,547,547,547,,Québec (Chutes-Montmorency),1
+TDCQ,544,544,544,,Baie-Saint-Paul,0
+TDCQ,545,545,545,,Québec (Chutes-Montmorency),1
+TDCM,548,548,548,,La Malbaie,0
+TDCM,549,549,549,,La Malbaie,0
 621-116,269,269,269,185,White River,0
 226-444,537,537,537,600,Montréal,1
 226-460,536,536,536,603,Senneterre,0
@@ -35,6 +43,7 @@ route_id,service_id,trip_id,shape_id,trip_short_name,trip_headsign,direction_id
 628-226,446,446,446,25,Montréal,0
 617-226,445,445,445,635,Ottawa,1
 617-226,444,444,444,34,Montréal,0
+8-119,109,109,109,3,Vancouver,1
 119-58,388,388,388,655,Toronto,1
 617-119,519,519,519,644,Ottawa,1
 119-93,518,518,518,82,Toronto,1
@@ -72,13 +81,21 @@ route_id,service_id,trip_id,shape_id,trip_short_name,trip_headsign,direction_id
 617-119,93,93,93,53,Toronto,0
 617-628,95,95,95,26,Québec,0
 226-460,397,397,397,606,Montréal,1
+8-119,110,110,110,4,Edmonton,0
+REGIM,555,555,,916,Gaspé,0
 AC,554,554,554,,Dorval,1
+REGIM,556,556,,917,Campbellton,1
+TDCM,551,551,551,,Baie-Saint-Paul,1
+TDCM,550,550,550,,La Malbaie,0
+TDCM,553,553,553,,Baie-Saint-Paul,1
+TDCM,552,552,552,,Baie-Saint-Paul,1
 119-618,489,489,489,73,Windsor,0
 119-618,488,488,488,71,Windsor,0
 617-119,487,487,487,647,Toronto,0
 617-119,486,486,486,47,Toronto,0
 617-119,485,485,485,43,Toronto,0
 617-119,484,484,484,641,Toronto,0
+226-119,483,483,483,51,Toronto,0
 628-576,434,434,434,22,Québec,1
 617-119,481,481,481,48,Ottawa,1
 628-226,433,433,433,622,Québec,1
@@ -92,4 +109,3 @@ AC,554,554,554,,Dorval,1
 226-119,475,475,475,64,Montréal,1
 617-119,478,478,478,44,Ottawa,1
 617-119,479,479,479,46,Ottawa,1
-617-226,557,557,557,31,Ottawa,1

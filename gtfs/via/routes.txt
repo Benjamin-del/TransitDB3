@@ -9,10 +9,13 @@ route_id,route_short_name,route_long_name,route_type,route_color,route_text_colo
 621-116,VIA Rail,Sudbury - White River,2,FFCB06,000000,1
 388-435,VIA Rail,Winnipeg - Churchill,2,FFCB06,000000,1
 617-628,VIA Rail,Ottawa - Québec,2,FFCB06,000000,1
+REGIM,,RÉGÎM,3,C1292D,FFFFFF,3
 119-618,VIA Rail,Toronto - Windsor,2,FFCB06,000000,1
 21-458,VIA Rail,Jasper - Prince Rupert,2,FFCB06,000000,1
 AC,VIA Rail,Air Connect,3,FFCB06,000000,1
 119-120,VIA Rail,Toronto - New York,2,FFCB06,000000,1
+TDCM,,Train de La Malbaie,2,FFC000,000000,2
+TDCQ,,Train de Québec,2,061435,FFFFFF,2
 617-226,VIA Rail,Ottawa - Montréal,2,FFCB06,000000,1
 617-119,VIA Rail,Ottawa - Toronto,2,FFCB06,000000,1
 628-576,VIA Rail,Québec - Fallowfield,2,FFCB06,000000,1
