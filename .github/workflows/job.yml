@@ -12,12 +12,16 @@ on:
   # Remove Push as it is interfering with GH pages deployment
     
 jobs:
-  run-script:
+  build:
     runs-on: ubuntu-latest
     name:  Update GTFS database
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v4
+    # Setup the pages
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v3
     - name: Update OC Transpo Data
       run: |
         node oct.js file=trips.txt
@@ -34,21 +38,30 @@ jobs:
         node sto.js file=routes.txt
         node sto.js file=shapes.txt
         node sto.js file=stops.txt
-    - name: Update VIA Data
-      run: |
-        node via.js file=trips.txt
-        node via.js file=stop_times.txt
-        node via.js file=calendar.txt
-        node via.js file=routes.txt
-        node via.js file=shapes.txt
-        node via.js file=stops.txt
     - name: Finish Update
       run: node update.js
-    - name: Push Update
-      run: |
-        git config --global user.name "${{ github.actor }} [Via GitHub Actions]"
-        git config --global user.email "${{ secrets.EMAIL }}"
-  
-        git add -A
-        git commit --allow-empty -m "Update files via GH Actions"
-        git push
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
+      with: 
+        path: ./
+        retention-days: 1
+  deploy:
+    # Make sure the API token has the required scopes
+    permissions:
+      contents: read
+      pages: write
+      id-token: write 
+    # Setup GH Pages  
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    # This job runs on the latest version of ubuntu
+    runs-on: ubuntu-latest
+    # This job runs after the build job
+    needs: build
+    # Deploy to GH Pages
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
