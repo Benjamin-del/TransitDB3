@@ -1,0 +1,2078 @@
+{
+    "agency": "OC Transpo",
+    "routes": [
+        {
+            "route_id": "1",
+            "shape_id": [
+                "10716",
+                "10736",
+                "10728",
+                "10729",
+                "10737",
+                "10746",
+                "10748",
+                "10719",
+                "10718"
+            ],
+            "headsign": "Blair - Tunney's Pasture"
+        },
+        {
+            "route_id": "2",
+            "shape_id": [
+                "20780",
+                "20762",
+                "20790",
+                "20779",
+                "20765",
+                "20791"
+            ],
+            "headsign": "Bayview - South keys"
+        },
+        {
+            "route_id": "5",
+            "shape_id": [
+                "51090",
+                "51098",
+                "50788",
+                "50805"
+            ],
+            "headsign": "Rideau - Billings Bridge"
+        },
+        {
+            "route_id": "6",
+            "shape_id": [
+                "61006",
+                "61004",
+                "61005",
+                "60978",
+                "60979",
+                "60977"
+            ],
+            "headsign": "Greenboro - Rockcliffe"
+        },
+        {
+            "route_id": "7",
+            "shape_id": [
+                "72185",
+                "71881",
+                "71883",
+                "71643",
+                "71902",
+                "71908",
+                "72181",
+                "72186",
+                "71402",
+                "72182"
+            ],
+            "headsign": "St-Laurent - Carleton"
+        },
+        {
+            "route_id": "9",
+            "shape_id": [
+                "91139",
+                "91140",
+                "91141"
+            ],
+            "headsign": "Rideau - Hurdman"
+        },
+        {
+            "route_id": "10",
+            "shape_id": [
+                "100531",
+                "100532",
+                "100521",
+                "100529",
+                "100426",
+                "100530"
+            ],
+            "headsign": "Hurdman - Lyon"
+        },
+        {
+            "route_id": "11",
+            "shape_id": [
+                "111084",
+                "111083",
+                "111101",
+                "111117",
+                "111116"
+            ],
+            "headsign": "Parliament ~ Parlement - Bayshore"
+        },
+        {
+            "route_id": "12",
+            "shape_id": [
+                "121829",
+                "121804"
+            ],
+            "headsign": "Blair - Parliament ~ Parlement"
+        },
+        {
+            "route_id": "14",
+            "shape_id": [
+                "140958",
+                "140952"
+            ],
+            "headsign": "St-Laurent - Tunney's Pasture"
+        },
+        {
+            "route_id": "15",
+            "shape_id": [
+                "150348",
+                "150070",
+                "150344",
+                "150349",
+                "150310"
+            ],
+            "headsign": "Blair - Gatineau"
+        },
+        {
+            "route_id": "16",
+            "shape_id": [
+                "162727",
+                "162736",
+                "162737",
+                "162833",
+                "162832",
+                "162740",
+                "162834",
+                "162741",
+                "162604",
+                "162779",
+                "162776",
+                "162627",
+                "162835",
+                "162836"
+            ],
+            "headsign": "Tunney's Pasture - Main"
+        },
+        {
+            "route_id": "18",
+            "shape_id": [
+                "180746",
+                "180852",
+                "180856"
+            ],
+            "headsign": "St-Laurent - Parliament ~ Parlement"
+        },
+        {
+            "route_id": "19",
+            "shape_id": [
+                "191648",
+                "191674",
+                "191508",
+                "191652",
+                "191653"
+            ],
+            "headsign": "St-Laurent / Hurdman - Parliament ~ Parlement"
+        },
+        {
+            "route_id": "20",
+            "shape_id": [
+                "200540",
+                "200542",
+                "200541"
+            ],
+            "headsign": "St-Laurent - Vanier"
+        },
+        {
+            "route_id": "21",
+            "shape_id": [
+                "210294",
+                "210293"
+            ],
+            "headsign": "Blair - Canotek"
+        },
+        {
+            "route_id": "23",
+            "shape_id": [
+                "230082"
+            ],
+            "headsign": "Rothwell Heights & Blair"
+        },
+        {
+            "route_id": "24",
+            "shape_id": [
+                "240686",
+                "240638",
+                "240687",
+                "240627",
+                "240718",
+                "240434",
+                "240635",
+                "240628",
+                "240457",
+                "240630"
+            ],
+            "headsign": "St-Laurent - Beacon Hill"
+        },
+        {
+            "route_id": "25",
+            "shape_id": [
+                "250436",
+                "250440",
+                "250439",
+                "250550",
+                "250469",
+                "250470",
+                "250471",
+                "250552",
+                "250472",
+                "250422"
+            ],
+            "headsign": "La Cité - Millennium"
+        },
+        {
+            "route_id": "26",
+            "shape_id": [
+                "260304",
+                "260305",
+                "260301",
+                "260306"
+            ],
+            "headsign": "Blair - Pineview"
+        },
+        {
+            "route_id": "27",
+            "shape_id": [
+                "270353",
+                "270375",
+                "270376"
+            ],
+            "headsign": "St-Laurent - Wateridge"
+        },
+        {
+            "route_id": "28",
+            "shape_id": [
+                "280554",
+                "280555",
+                "280562",
+                "280561",
+                "280565",
+                "280556",
+                "280566",
+                "280564",
+                "280563"
+            ],
+            "headsign": "Blair - Blackburn Hamlet"
+        },
+        {
+            "route_id": "30",
+            "shape_id": [
+                "300940",
+                "300941",
+                "300942",
+                "300930",
+                "300931",
+                "300932",
+                "300995",
+                "300871",
+                "300933"
+            ],
+            "headsign": "Blair - Millennium"
+        },
+        {
+            "route_id": "31",
+            "shape_id": [
+                "310349",
+                "310351"
+            ],
+            "headsign": "Place d'Orléans - Blair"
+        },
+        {
+            "route_id": "32",
+            "shape_id": [
+                "320332",
+                "320304",
+                "320316",
+                "320334",
+                "320294",
+                "320282"
+            ],
+            "headsign": "Blair - Chapel Hill"
+        },
+        {
+            "route_id": "33",
+            "shape_id": [
+                "330449",
+                "330416",
+                "330450",
+                "330451",
+                "330452",
+                "330162",
+                "330371",
+                "330473",
+                "330496"
+            ],
+            "headsign": "Blair - Portobello"
+        },
+        {
+            "route_id": "34",
+            "shape_id": [
+                "340806",
+                "340807",
+                "340764",
+                "340767",
+                "340577",
+                "340801",
+                "340808"
+            ],
+            "headsign": "Blair - Renaud"
+        },
+        {
+            "route_id": "35",
+            "shape_id": [
+                "350554",
+                "350557",
+                "350443",
+                "350334",
+                "350555",
+                "350505",
+                "350556",
+                "350517",
+                "350335",
+                "350339",
+                "350516",
+                "350601"
+            ],
+            "headsign": "Blair - Esprit"
+        },
+        {
+            "route_id": "37",
+            "shape_id": [
+                "370285",
+                "370299"
+            ],
+            "headsign": "Place D'Orléans - Queenswood Heights"
+        },
+        {
+            "route_id": "38",
+            "shape_id": [
+                "380821",
+                "380820",
+                "380862",
+                "380863",
+                "380801",
+                "380864",
+                "380822",
+                "380813"
+            ],
+            "headsign": "Blair - Jeanne d'Arc / Trim"
+        },
+        {
+            "route_id": "39",
+            "shape_id": [
+                "391003",
+                "390961",
+                "390960",
+                "390964",
+                "391086",
+                "391087",
+                "391088",
+                "391049",
+                "391071",
+                "390970",
+                "391050",
+                "391082",
+                "391084",
+                "391089",
+                "391083",
+                "391085",
+                "391051",
+                "390983",
+                "390982",
+                "390984",
+                "391048",
+                "390939",
+                "390991",
+                "391052",
+                "391072"
+            ],
+            "headsign": "Blair - Millennium"
+        },
+        {
+            "route_id": "40",
+            "shape_id": [
+                "400941",
+                "400942",
+                "400943",
+                "400944",
+                "400945",
+                "400947",
+                "400946",
+                "400949",
+                "400948"
+            ],
+            "headsign": "St-Laurent - Greenboro"
+        },
+        {
+            "route_id": "42",
+            "shape_id": [
+                "420736",
+                "420680",
+                "420681",
+                "420737"
+            ],
+            "headsign": "Hurdman - Blair"
+        },
+        {
+            "route_id": "44",
+            "shape_id": [
+                "440797",
+                "440798",
+                "440717",
+                "440799"
+            ],
+            "headsign": "Hurdman - Billings Bridge"
+        },
+        {
+            "route_id": "45",
+            "shape_id": [
+                "450441",
+                "450440",
+                "450457",
+                "450458"
+            ],
+            "headsign": "Hurdman - Hospital ~ Hôpital"
+        },
+        {
+            "route_id": "46",
+            "shape_id": [
+                "460200",
+                "460287",
+                "460064",
+                "460306",
+                "460244",
+                "460201",
+                "460307"
+            ],
+            "headsign": "Billings Bridge - Hurdman"
+        },
+        {
+            "route_id": "47",
+            "shape_id": [
+                "470130",
+                "470078"
+            ],
+            "headsign": "St-Laurent - Hawthorne"
+        },
+        {
+            "route_id": "48",
+            "shape_id": [
+                "480572",
+                "480573",
+                "480574",
+                "480575"
+            ],
+            "headsign": "Hurdman - Elmvale"
+        },
+        {
+            "route_id": "49",
+            "shape_id": [
+                "490225",
+                "490194",
+                "490259",
+                "490260"
+            ],
+            "headsign": "Hurdman - Elmvale"
+        },
+        {
+            "route_id": "50",
+            "shape_id": [
+                "500371",
+                "500372",
+                "500376",
+                "500375"
+            ],
+            "headsign": "Lincoln Fields - Tunney's Pasture"
+        },
+        {
+            "route_id": "51",
+            "shape_id": [
+                "510426",
+                "510417",
+                "510435",
+                "510423",
+                "510415",
+                "510425",
+                "510291",
+                "510427",
+                "510418",
+                "510416"
+            ],
+            "headsign": "Tunney's Pasture - Britannia"
+        },
+        {
+            "route_id": "53",
+            "shape_id": [
+                "530239",
+                "530238",
+                "530271"
+            ],
+            "headsign": "Tunney's Pasture - Carlington"
+        },
+        {
+            "route_id": "54",
+            "shape_id": [
+                "540185"
+            ],
+            "headsign": "Tunney's Pasture"
+        },
+        {
+            "route_id": "55",
+            "shape_id": [
+                "550257",
+                "550314",
+                "550261",
+                "550258",
+                "550402",
+                "550373",
+                "550374",
+                "550403",
+                "550315"
+            ],
+            "headsign": "Westgate - Elmvale"
+        },
+        {
+            "route_id": "56",
+            "shape_id": [
+                "560574",
+                "560587",
+                "560684",
+                "560586",
+                "560512",
+                "560683",
+                "560582",
+                "560564",
+                "560631",
+                "560571"
+            ],
+            "headsign": "Tunney's Pasture - King Edward & Civic"
+        },
+        {
+            "route_id": "57",
+            "shape_id": [
+                "571028",
+                "570931",
+                "571033",
+                "570933",
+                "570691",
+                "570927",
+                "571031",
+                "570991",
+                "570993",
+                "570929",
+                "570926",
+                "570994",
+                "570935",
+                "570995",
+                "571022",
+                "571050",
+                "570930"
+            ],
+            "headsign": "Tunney's Pasture - Crystal Bay"
+        },
+        {
+            "route_id": "58",
+            "shape_id": [
+                "580509",
+                "580522",
+                "580520",
+                "580529",
+                "580530",
+                "580514",
+                "580572",
+                "580523",
+                "580506",
+                "580527",
+                "580526",
+                "580528"
+            ],
+            "headsign": "Crystal Bay - Lincoln Fields"
+        },
+        {
+            "route_id": "61",
+            "shape_id": [
+                "614342",
+                "614345",
+                "614329",
+                "614330",
+                "614338",
+                "614332",
+                "614339",
+                "614333",
+                "614340",
+                "614341",
+                "614343",
+                "614344",
+                "614135",
+                "614217",
+                "614219",
+                "614218",
+                "614140",
+                "614136",
+                "614126",
+                "614157",
+                "614221",
+                "614220",
+                "614331",
+                "614225",
+                "614224",
+                "614223",
+                "614277",
+                "614139",
+                "614336",
+                "614172",
+                "614335",
+                "614334",
+                "614337"
+            ],
+            "headsign": "Tunney's Pasture - Stittsville"
+        },
+        {
+            "route_id": "62",
+            "shape_id": [
+                "622139",
+                "622140",
+                "622141",
+                "622007",
+                "622032",
+                "622033",
+                "622034",
+                "622105",
+                "622053",
+                "622138",
+                "622082"
+            ],
+            "headsign": "Tunney's Pasture - Stittsville"
+        },
+        {
+            "route_id": "63",
+            "shape_id": [
+                "631758",
+                "631759",
+                "631760",
+                "631761",
+                "631756",
+                "631692",
+                "631719",
+                "631695",
+                "631694",
+                "631696",
+                "631697",
+                "631478",
+                "631757",
+                "631698",
+                "631724"
+            ],
+            "headsign": "Tunney's Pasture via Briarbrook - Briarbrook via Innovation"
+        },
+        {
+            "route_id": "64",
+            "shape_id": [
+                "641288",
+                "641286",
+                "641287",
+                "641263",
+                "641265",
+                "641264"
+            ],
+            "headsign": "Tunney's Pasture via Morgan's Grant - Morgan's Grant via Innovation"
+        },
+        {
+            "route_id": "66",
+            "shape_id": [
+                "660761",
+                "660760",
+                "660759",
+                "660758"
+            ],
+            "headsign": "Gatineau - Kanata-Solandt"
+        },
+        {
+            "route_id": "67",
+            "shape_id": [
+                "670271",
+                "670344",
+                "670299",
+                "670305",
+                "670304",
+                "670300"
+            ],
+            "headsign": "Cope - Terry Fox"
+        },
+        {
+            "route_id": "73",
+            "shape_id": [
+                "730325",
+                "730218",
+                "730324"
+            ],
+            "headsign": "Tunney's Pasture - Leikin"
+        },
+        {
+            "route_id": "74",
+            "shape_id": [
+                "740407",
+                "740140",
+                "740408",
+                "740086"
+            ],
+            "headsign": "Tunney's Pasture - Riverview"
+        },
+        {
+            "route_id": "75",
+            "shape_id": [
+                "751370",
+                "751369",
+                "751395",
+                "751362",
+                "751354",
+                "751359",
+                "751360",
+                "751361",
+                "751363",
+                "751396",
+                "751353",
+                "751373",
+                "751365",
+                "751371",
+                "751372",
+                "751405",
+                "751406",
+                "751355",
+                "751358",
+                "751404",
+                "751401",
+                "751402",
+                "751403"
+            ],
+            "headsign": "Tunney's Pasture - Barrhaven Centre"
+        },
+        {
+            "route_id": "80",
+            "shape_id": [
+                "801134",
+                "801155",
+                "801137",
+                "801135",
+                "801157",
+                "801327",
+                "801159",
+                "801138",
+                "801330",
+                "801158",
+                "801328",
+                "801329",
+                "800621",
+                "801331",
+                "801210"
+            ],
+            "headsign": "Tunney's Pasture - Barrhaven Centre"
+        },
+        {
+            "route_id": "81",
+            "shape_id": [
+                "810360",
+                "810362",
+                "810363",
+                "810346"
+            ],
+            "headsign": "Tunney's Pasture - Clyde"
+        },
+        {
+            "route_id": "82",
+            "shape_id": [
+                "821350",
+                "821337",
+                "821351",
+                "821339",
+                "821254",
+                "821356",
+                "821355",
+                "821353",
+                "821352",
+                "821354",
+                "821345",
+                "821151",
+                "821315",
+                "821348",
+                "821349"
+            ],
+            "headsign": "Lincoln Fields & Tunney's Pasture - Bayshore"
+        },
+        {
+            "route_id": "83",
+            "shape_id": [
+                "830421",
+                "830420",
+                "830410",
+                "830415",
+                "830411",
+                "830422",
+                "830418"
+            ],
+            "headsign": "Baseline - Viewmount"
+        },
+        {
+            "route_id": "84",
+            "shape_id": [
+                "840189",
+                "840207"
+            ],
+            "headsign": "Baseline - Centrepointe"
+        },
+        {
+            "route_id": "85",
+            "shape_id": [
+                "851224",
+                "851272",
+                "851273",
+                "851274",
+                "851103"
+            ],
+            "headsign": "Gatineau - Bayshore"
+        },
+        {
+            "route_id": "86",
+            "shape_id": [
+                "861908",
+                "861853",
+                "861854"
+            ],
+            "headsign": "Tunney's Pasture - Baseline"
+        },
+        {
+            "route_id": "87",
+            "shape_id": [
+                "871793",
+                "871764",
+                "871794",
+                "871795"
+            ],
+            "headsign": "Tunney's Pasture - Baseline"
+        },
+        {
+            "route_id": "88",
+            "shape_id": [
+                "881288",
+                "881283",
+                "881289",
+                "881284",
+                "881290",
+                "881285",
+                "881291",
+                "881270",
+                "881271",
+                "881269",
+                "881264",
+                "881267",
+                "881268",
+                "881118",
+                "881001",
+                "881239",
+                "881272",
+                "881286",
+                "881287"
+            ],
+            "headsign": "Hurdman - Terry Fox"
+        },
+        {
+            "route_id": "89",
+            "shape_id": [
+                "890333",
+                "890314"
+            ],
+            "headsign": "Tunney's Pasture - Colonnade"
+        },
+        {
+            "route_id": "90",
+            "shape_id": [
+                "900303",
+                "900304",
+                "900175",
+                "900305",
+                "900140"
+            ],
+            "headsign": "Greenboro - Hurdman"
+        },
+        {
+            "route_id": "92",
+            "shape_id": [
+                "920766",
+                "920765",
+                "920627",
+                "920764",
+                "920830",
+                "920831"
+            ],
+            "headsign": "Greenboro - Hurdman"
+        },
+        {
+            "route_id": "93",
+            "shape_id": [
+                "931002",
+                "930932",
+                "931088",
+                "931087",
+                "931089",
+                "931090",
+                "931017",
+                "931091",
+                "931067",
+                "931093",
+                "930924",
+                "931092",
+                "930836",
+                "930917",
+                "930620",
+                "930907"
+            ],
+            "headsign": "Greenboro / Hurdman - Leitrim"
+        },
+        {
+            "route_id": "96",
+            "shape_id": [
+                "961722",
+                "961768",
+                "961725",
+                "961721",
+                "961720",
+                "961765",
+                "961763",
+                "961589",
+                "961440",
+                "961762",
+                "961433",
+                "961764",
+                "961751",
+                "961729",
+                "961447",
+                "961449",
+                "961769"
+            ],
+            "headsign": "Hurdman / Greenboro - Merivale / 96b Hunt Club"
+        },
+        {
+            "route_id": "97",
+            "shape_id": [
+                "974388",
+                "974387",
+                "974263",
+                "974271",
+                "974376",
+                "974267",
+                "974351"
+            ],
+            "headsign": "Hurdman - Airport ~ Aéroport"
+        },
+        {
+            "route_id": "98",
+            "shape_id": [
+                "981129",
+                "981069"
+            ],
+            "headsign": "Hurdman - Hawthorne"
+        },
+        {
+            "route_id": "99",
+            "shape_id": [
+                "991680",
+                "991681",
+                "991633",
+                "991628",
+                "991626",
+                "991636",
+                "991637",
+                "991638",
+                "991634",
+                "991635",
+                "991639",
+                "991641",
+                "991509",
+                "991502",
+                "991683",
+                "991648",
+                "991649",
+                "991627"
+            ],
+            "headsign": "Greenboro & Hurdman - Barrhaven Centre"
+        },
+        {
+            "route_id": "110",
+            "shape_id": [
+                "1100014",
+                "1100108",
+                "1100107",
+                "1100016",
+                "1100149",
+                "1100066",
+                "1100109",
+                "1100067"
+            ],
+            "headsign": "Fallowfield - Innovation"
+        },
+        {
+            "route_id": "111",
+            "shape_id": [
+                "1110890",
+                "1110891",
+                "1110892",
+                "1111010",
+                "1111011",
+                "1110913",
+                "1110893",
+                "1111016"
+            ],
+            "headsign": "Baseline - Carleton"
+        },
+        {
+            "route_id": "114",
+            "shape_id": [
+                "1140708",
+                "1140755"
+            ],
+            "headsign": "Rideau - Carlington"
+        },
+        {
+            "route_id": "131",
+            "shape_id": [
+                "1310966",
+                "1310951",
+                "1310965",
+                "1310958",
+                "1310762",
+                "1310869",
+                "1310763",
+                "1310774",
+                "1311013",
+                "1310848"
+            ],
+            "headsign": "Fallingbrook - Chapel Hill"
+        },
+        {
+            "route_id": "138",
+            "shape_id": [
+                "1380182",
+                "1380199"
+            ],
+            "headsign": "Place d'Orléans - Innes"
+        },
+        {
+            "route_id": "140",
+            "shape_id": [
+                "1400159",
+                "1400126"
+            ],
+            "headsign": "Billings Bridge - Herongate"
+        },
+        {
+            "route_id": "141",
+            "shape_id": [
+                "1410061",
+                "1410062"
+            ],
+            "headsign": "Heron Park"
+        },
+        {
+            "route_id": "153",
+            "shape_id": [
+                "1530504",
+                "1530506",
+                "1530493",
+                "1530505"
+            ],
+            "headsign": "Lincoln Fields - Tunney's Pasture"
+        },
+        {
+            "route_id": "154",
+            "shape_id": [
+                "1540139",
+                "1540140"
+            ],
+            "headsign": "Lincoln Fields - Queensway Terrace"
+        },
+        {
+            "route_id": "155",
+            "shape_id": [
+                "1550271",
+                "1550270"
+            ],
+            "headsign": "Queensway Terrace - Bayshore"
+        },
+        {
+            "route_id": "158",
+            "shape_id": [
+                "1580109",
+                "1580097"
+            ],
+            "headsign": "Bayshore - Haanel"
+        },
+        {
+            "route_id": "161",
+            "shape_id": [
+                "1610399",
+                "1610235",
+                "1610400",
+                "1610450",
+                "1610474",
+                "1610485",
+                "1610484",
+                "1610236",
+                "1610348",
+                "1610466",
+                "1610467"
+            ],
+            "headsign": "Bridlewood - Terry Fox"
+        },
+        {
+            "route_id": "162",
+            "shape_id": [
+                "1620168",
+                "1620167"
+            ],
+            "headsign": "Terry Fox - Stittsville"
+        },
+        {
+            "route_id": "164",
+            "shape_id": [
+                "1640574",
+                "1640493",
+                "1640517",
+                "1640558"
+            ],
+            "headsign": "Terry Fox - Hope Side"
+        },
+        {
+            "route_id": "165",
+            "shape_id": [
+                "1650094",
+                "1650070"
+            ],
+            "headsign": "Innovation - Terry Fox"
+        },
+        {
+            "route_id": "166",
+            "shape_id": [
+                "1660063",
+                "1660067"
+            ],
+            "headsign": "Innovation - Eagleson"
+        },
+        {
+            "route_id": "168",
+            "shape_id": [
+                "1680366",
+                "1680370",
+                "1680432",
+                "1680407",
+                "1680371",
+                "1680367",
+                "1680369"
+            ],
+            "headsign": "Bridlewood - Terry Fox"
+        },
+        {
+            "route_id": "170",
+            "shape_id": [
+                "1700617",
+                "1700614",
+                "1700618",
+                "1700615",
+                "1700559",
+                "1700616"
+            ],
+            "headsign": "Fallowfield - Barrhaven Centre"
+        },
+        {
+            "route_id": "171",
+            "shape_id": [
+                "1710432",
+                "1710438",
+                "1710436",
+                "1710439",
+                "1710382",
+                "1710437",
+                "1710440",
+                "1710383"
+            ],
+            "headsign": "Fallowfield - Barrhaven Centre"
+        },
+        {
+            "route_id": "173",
+            "shape_id": [
+                "1730892",
+                "1730893",
+                "1730894",
+                "1730895",
+                "1730897",
+                "1730896",
+                "1730898"
+            ],
+            "headsign": "Barrhaven Centre - Fallowfield"
+        },
+        {
+            "route_id": "175",
+            "shape_id": [
+                "1750151",
+                "1750152",
+                "1750080",
+                "1750150",
+                "1750153"
+            ],
+            "headsign": "Barrhaven Centre - Golflinks"
+        },
+        {
+            "route_id": "176",
+            "shape_id": [
+                "1760991",
+                "1760992"
+            ],
+            "headsign": "Barrhaven Centre - Manotick"
+        },
+        {
+            "route_id": "186",
+            "shape_id": [
+                "1860157",
+                "1860161"
+            ],
+            "headsign": "Lincoln Fields - Merivale"
+        },
+        {
+            "route_id": "187",
+            "shape_id": [
+                "1870099",
+                "1870098",
+                "1870109",
+                "1870108"
+            ],
+            "headsign": "Baseline - Amberwood"
+        },
+        {
+            "route_id": "190",
+            "shape_id": [
+                "1900063",
+                "1900064"
+            ],
+            "headsign": "Hurdman - Mooney's Bay"
+        },
+        {
+            "route_id": "197",
+            "shape_id": [
+                "1970097",
+                "1970126",
+                "1970127"
+            ],
+            "headsign": "Uplands Greenboro"
+        },
+        {
+            "route_id": "198",
+            "shape_id": [
+                "1980137",
+                "1980184",
+                "1980185",
+                "1980186"
+            ],
+            "headsign": "Greenboro - Riverview"
+        },
+        {
+            "route_id": "199",
+            "shape_id": [
+                "1990175",
+                "1990149"
+            ],
+            "headsign": "Hurdman - Leikin"
+        },
+        {
+            "route_id": "221",
+            "shape_id": [
+                "2210337",
+                "2210343",
+                "2210332",
+                "2210333",
+                "2210348"
+            ],
+            "headsign": "Blair - Cumberland"
+        },
+        {
+            "route_id": "222",
+            "shape_id": [
+                "2220200",
+                "2220196"
+            ],
+            "headsign": "Blair - Vars"
+        },
+        {
+            "route_id": "228",
+            "shape_id": [
+                "2280201",
+                "2280200"
+            ],
+            "headsign": "Blair - Navan / Sarsfield"
+        },
+        {
+            "route_id": "231",
+            "shape_id": [
+                "2310406",
+                "2310388"
+            ],
+            "headsign": "Blair - Meadowglen"
+        },
+        {
+            "route_id": "232",
+            "shape_id": [
+                "2320386",
+                "2320387"
+            ],
+            "headsign": "Blair - Queenswood Heights"
+        },
+        {
+            "route_id": "234",
+            "shape_id": [
+                "2340312",
+                "2340313"
+            ],
+            "headsign": "Blair - Tenth line"
+        },
+        {
+            "route_id": "236",
+            "shape_id": [
+                "2360242",
+                "2360243"
+            ],
+            "headsign": "Blair - Esprit"
+        },
+        {
+            "route_id": "237",
+            "shape_id": [
+                "2370217",
+                "2370216"
+            ],
+            "headsign": "Blair - Jeanne d'Arc"
+        },
+        {
+            "route_id": "252",
+            "shape_id": [
+                "2520588",
+                "2520587"
+            ],
+            "headsign": "Tunney's Pasture - Templeford"
+        },
+        {
+            "route_id": "256",
+            "shape_id": [
+                "2560525",
+                "2560526"
+            ],
+            "headsign": "Tunney's Pasture - Bridlewood"
+        },
+        {
+            "route_id": "257",
+            "shape_id": [
+                "2570440",
+                "2570441",
+                "2570420"
+            ],
+            "headsign": "Tunney's Pasture -  Bridlewood"
+        },
+        {
+            "route_id": "258",
+            "shape_id": [
+                "2580183",
+                "2580184"
+            ],
+            "headsign": "Tunney's Pasture - Grandview"
+        },
+        {
+            "route_id": "261",
+            "shape_id": [
+                "2610626",
+                "2610627"
+            ],
+            "headsign": "Tunney's Pasture - Stittsville Main"
+        },
+        {
+            "route_id": "262",
+            "shape_id": [
+                "2620724",
+                "2620722"
+            ],
+            "headsign": "Tunney's Pasture - West Ridge"
+        },
+        {
+            "route_id": "263",
+            "shape_id": [
+                "2630607",
+                "2630609"
+            ],
+            "headsign": "Tunney's Pasture - Stanley Corners"
+        },
+        {
+            "route_id": "264",
+            "shape_id": [
+                "2640445",
+                "2640446"
+            ],
+            "headsign": "Tunney's Pasture - Terry Fox"
+        },
+        {
+            "route_id": "265",
+            "shape_id": [
+                "2650328",
+                "2650313"
+            ],
+            "headsign": "Tunney's Pasture - Beaverbrook"
+        },
+        {
+            "route_id": "267",
+            "shape_id": [
+                "2670512",
+                "2670501"
+            ],
+            "headsign": "Tunney's Pasture - Glen Cairn"
+        },
+        {
+            "route_id": "268",
+            "shape_id": [
+                "2680435",
+                "2680423"
+            ],
+            "headsign": "Tunney's Pasture - Kanata Lakes"
+        },
+        {
+            "route_id": "270",
+            "shape_id": [
+                "2700379",
+                "2700378"
+            ],
+            "headsign": "Tunney's Pasture - Cedarview"
+        },
+        {
+            "route_id": "271",
+            "shape_id": [
+                "2710363",
+                "2710357"
+            ],
+            "headsign": "Tunney's Pasture - Stoneway"
+        },
+        {
+            "route_id": "272",
+            "shape_id": [
+                "2720426",
+                "2720427"
+            ],
+            "headsign": "Tunney's Pasture - Cobble Hill"
+        },
+        {
+            "route_id": "273",
+            "shape_id": [
+                "2730408",
+                "2730407"
+            ],
+            "headsign": "Tunney's Pasture - Tartan"
+        },
+        {
+            "route_id": "277",
+            "shape_id": [
+                "2770358",
+                "2770357"
+            ],
+            "headsign": "Tunney's Pasture - Nepean Woods"
+        },
+        {
+            "route_id": "278",
+            "shape_id": [
+                "2780407",
+                "2780406",
+                "2780395",
+                "2780394"
+            ],
+            "headsign": "Tunney's Pasture - Riverside South ~ Riverside Sud"
+        },
+        {
+            "route_id": "282",
+            "shape_id": [
+                "2820348",
+                "2820346"
+            ],
+            "headsign": "Tunney's Pasture - Trend-Arlington"
+        },
+        {
+            "route_id": "283",
+            "shape_id": [
+                "2830862",
+                "2830861",
+                "2830859",
+                "2830856",
+                "2830858"
+            ],
+            "headsign": "Tunney's Pasture - Richmond / Munster"
+        },
+        {
+            "route_id": "290",
+            "shape_id": [
+                "2900231",
+                "2900232"
+            ],
+            "headsign": "McCarthy - Hurdman"
+        },
+        {
+            "route_id": "291",
+            "shape_id": [
+                "2910171",
+                "2910097"
+            ],
+            "headsign": "Hurdman - Herongate"
+        },
+        {
+            "route_id": "294",
+            "shape_id": [
+                "2940196",
+                "2940203"
+            ],
+            "headsign": "Hurdman - Findlay Creek"
+        },
+        {
+            "route_id": "299",
+            "shape_id": [
+                "2990116",
+                "2990115",
+                "2990100",
+                "2990096"
+            ],
+            "headsign": "Hurdman - Manotick"
+        },
+        {
+            "route_id": "301",
+            "shape_id": [
+                "3010065",
+                "3010064"
+            ],
+            "headsign": "Bayshore / Carlingwood - Richmond / Stittsville"
+        },
+        {
+            "route_id": "302",
+            "shape_id": [
+                "3020037",
+                "3020038"
+            ],
+            "headsign": "St Laurent / Place D'Orléans - Cumberland"
+        },
+        {
+            "route_id": "303",
+            "shape_id": [
+                "3030056",
+                "3030057"
+            ],
+            "headsign": "Bayshore / Carlingwood - Dunrobin / Carp / Stittsville"
+        },
+        {
+            "route_id": "304",
+            "shape_id": [
+                "3040021",
+                "3040022"
+            ],
+            "headsign": "Billings Bridge / South Keys - Osgoode / Greely / Metcalfe"
+        },
+        {
+            "route_id": "305",
+            "shape_id": [
+                "3050048",
+                "3050049"
+            ],
+            "headsign": "Carlingwood - North Gower / Manotick"
+        },
+        {
+            "route_id": "404",
+            "shape_id": [
+                "4040165",
+                "4040166",
+                "4040178"
+            ],
+            "headsign": "Centre Canadian Tire Centre"
+        },
+        {
+            "route_id": "405",
+            "shape_id": [
+                "4050038",
+                "4050040"
+            ],
+            "headsign": "Centre Canadian Tire Centre"
+        },
+        {
+            "route_id": "406",
+            "shape_id": [
+                "4060092",
+                "4060082",
+                "4060094"
+            ],
+            "headsign": "Centre Canadian Tire Centre"
+        },
+        {
+            "route_id": "602",
+            "shape_id": [
+                "6020187",
+                "6020134"
+            ],
+            "headsign": "Mackenzie King - De La Salle"
+        },
+        {
+            "route_id": "609",
+            "shape_id": [
+                "6090077",
+                "6090066",
+                "6090068"
+            ],
+            "headsign": "De La Salle - Elmvale"
+        },
+        {
+            "route_id": "611",
+            "shape_id": [
+                "6110079",
+                "6110095"
+            ],
+            "headsign": "Orléans - Gisèle Lalonde"
+        },
+        {
+            "route_id": "612",
+            "shape_id": [
+                "6120195",
+                "6120203",
+                "6120168",
+                "6120120"
+            ],
+            "headsign": "Béatrice Desloges / Gisele Lalonde - Renaud"
+        },
+        {
+            "route_id": "613",
+            "shape_id": [
+                "6130076"
+            ],
+            "headsign": "Hurdman"
+        },
+        {
+            "route_id": "615",
+            "shape_id": [
+                "6150019"
+            ],
+            "headsign": "Parliament ~ Parlement"
+        },
+        {
+            "route_id": "616",
+            "shape_id": [
+                "6160033",
+                "6160038"
+            ],
+            "headsign": "Parliament ~ Parlement - Gloucester H.S"
+        },
+        {
+            "route_id": "618",
+            "shape_id": [
+                "6180094",
+                "6180096"
+            ],
+            "headsign": "Millennium - Louis Riel"
+        },
+        {
+            "route_id": "619",
+            "shape_id": [
+                "6190130",
+                "6190121"
+            ],
+            "headsign": "Blair - Louis Riel"
+        },
+        {
+            "route_id": "620",
+            "shape_id": [
+                "6200016"
+            ],
+            "headsign": "St-Laurent"
+        },
+        {
+            "route_id": "622",
+            "shape_id": [
+                "6220176",
+                "6220181",
+                "6220182",
+                "6220164"
+            ],
+            "headsign": "Renaud - Colonel By / Gloucester H.S / Lester B. Pearson"
+        },
+        {
+            "route_id": "624",
+            "shape_id": [
+                "6240087",
+                "6240077"
+            ],
+            "headsign": "Rideau - Gloucester H.S"
+        },
+        {
+            "route_id": "628",
+            "shape_id": [
+                "6280005"
+            ],
+            "headsign": "Louis-Riel"
+        },
+        {
+            "route_id": "630",
+            "shape_id": [
+                "6300102",
+                "6300100"
+            ],
+            "headsign": "Blair / Colonel By / Gloucester H.S - Millennium"
+        },
+        {
+            "route_id": "631",
+            "shape_id": [
+                "6310053",
+                "6310051"
+            ],
+            "headsign": "Colonel By / Gloucester H.S - Chapel Hill"
+        },
+        {
+            "route_id": "632",
+            "shape_id": [
+                "6320096",
+                "6320083"
+            ],
+            "headsign": "Gisèle Lalonde - Orléans"
+        },
+        {
+            "route_id": "633",
+            "shape_id": [
+                "6330108",
+                "6330109"
+            ],
+            "headsign": "St-Laurent - Lester B. Pearson"
+        },
+        {
+            "route_id": "634",
+            "shape_id": [
+                "6340068",
+                "6340063"
+            ],
+            "headsign": "Place d'Orléans - Mer bleue"
+        },
+        {
+            "route_id": "635",
+            "shape_id": [
+                "6350030",
+                "6350033"
+            ],
+            "headsign": "Carine Wilson H.S - Orléans"
+        },
+        {
+            "route_id": "636",
+            "shape_id": [
+                "6360032"
+            ],
+            "headsign": "Place d'Orléans"
+        },
+        {
+            "route_id": "638",
+            "shape_id": [
+                "6380023"
+            ],
+            "headsign": "Orléans"
+        },
+        {
+            "route_id": "639",
+            "shape_id": [
+                "6390046",
+                "6390072"
+            ],
+            "headsign": "Place d'Orléans - Gisèle Lalonde"
+        },
+        {
+            "route_id": "640",
+            "shape_id": [
+                "6400069",
+                "6400045"
+            ],
+            "headsign": "South Keys - Brookfield"
+        },
+        {
+            "route_id": "641",
+            "shape_id": [
+                "6410120",
+                "6410119"
+            ],
+            "headsign": "Orléans - Louis Riel"
+        },
+        {
+            "route_id": "644",
+            "shape_id": [
+                "6440075",
+                "6440049"
+            ],
+            "headsign": "Greenboro - Canterbury"
+        },
+        {
+            "route_id": "645",
+            "shape_id": [
+                "6450045"
+            ],
+            "headsign": "Hurdman"
+        },
+        {
+            "route_id": "646",
+            "shape_id": [
+                "6460014",
+                "6460013"
+            ],
+            "headsign": "Canterbury H.S - Terry Fox"
+        },
+        {
+            "route_id": "648",
+            "shape_id": [
+                "6480094",
+                "6480085"
+            ],
+            "headsign": "Orléans - Louis Riel"
+        },
+        {
+            "route_id": "649",
+            "shape_id": [
+                "6490314",
+                "6490317"
+            ],
+            "headsign": "Greenboro - Hillcrest"
+        },
+        {
+            "route_id": "658",
+            "shape_id": [
+                "6580091",
+                "6580092"
+            ],
+            "headsign": "Grandview - Bell H.S"
+        },
+        {
+            "route_id": "660",
+            "shape_id": [
+                "6600137",
+                "6600144"
+            ],
+            "headsign": "Innovation - Bell H.S"
+        },
+        {
+            "route_id": "661",
+            "shape_id": [
+                "6610134",
+                "6610126"
+            ],
+            "headsign": "Bell H.S - Terry Fox"
+        },
+        {
+            "route_id": "664",
+            "shape_id": [
+                "6640023",
+                "6640032"
+            ],
+            "headsign": "Kanata Lakes - Earl of March H.S"
+        },
+        {
+            "route_id": "665",
+            "shape_id": [
+                "6650180",
+                "6650165"
+            ],
+            "headsign": "Bell H.S - Kanata"
+        },
+        {
+            "route_id": "667",
+            "shape_id": [
+                "6670017",
+                "6670016",
+                "6670015"
+            ],
+            "headsign": "Holy Trinity H.S - Summergaze"
+        },
+        {
+            "route_id": "668",
+            "shape_id": [
+                "6680028",
+                "6680027",
+                "6680025"
+            ],
+            "headsign": "Bridlewood - Holy Trinity H.S"
+        },
+        {
+            "route_id": "669",
+            "shape_id": [
+                "6690203",
+                "6690206"
+            ],
+            "headsign": "Bayshore - Bell"
+        },
+        {
+            "route_id": "670",
+            "shape_id": [
+                "6700044",
+                "6700093"
+            ],
+            "headsign": "St. Pius - Nepean S."
+        },
+        {
+            "route_id": "671",
+            "shape_id": [
+                "6710055",
+                "6710054",
+                "6710056"
+            ],
+            "headsign": "Half Moon Bay - John McCrae H.S"
+        },
+        {
+            "route_id": "672",
+            "shape_id": [
+                "6720020",
+                "6720005"
+            ],
+            "headsign": "Golflinks - John McCrae H.S"
+        },
+        {
+            "route_id": "674",
+            "shape_id": [
+                "6740175",
+                "6740196"
+            ],
+            "headsign": "Kanata - All Saints"
+        },
+        {
+            "route_id": "675",
+            "shape_id": [
+                "6750063",
+                "6750039"
+            ],
+            "headsign": "Bell H.S / Franco-Ouest - Cambrian"
+        },
+        {
+            "route_id": "676",
+            "shape_id": [
+                "6760028",
+                "6760015"
+            ],
+            "headsign": "Riverview - Mother Teresa H.S."
+        },
+        {
+            "route_id": "677",
+            "shape_id": [
+                "6770018",
+                "6770017"
+            ],
+            "headsign": "St. Joseph H.S - Larkin"
+        },
+        {
+            "route_id": "678",
+            "shape_id": [
+                "6780094",
+                "6780092"
+            ],
+            "headsign": "Orléans - Louis Riel"
+        },
+        {
+            "route_id": "679",
+            "shape_id": [
+                "6790004",
+                "6790003"
+            ],
+            "headsign": "St Joseph H.S - Cobble Hill"
+        },
+        {
+            "route_id": "680",
+            "shape_id": [
+                "6800031",
+                "6800013"
+            ],
+            "headsign": "Riverside South ~ Riverside Sud - Merivale H.S"
+        },
+        {
+            "route_id": "681",
+            "shape_id": [
+                "6810138",
+                "6810124"
+            ],
+            "headsign": "Bell H.S - Kanata"
+        },
+        {
+            "route_id": "682",
+            "shape_id": [
+                "6820020",
+                "6820021"
+            ],
+            "headsign": "Cedarview M.S - Fallowfield"
+        },
+        {
+            "route_id": "683",
+            "shape_id": [
+                "6830022",
+                "6830023"
+            ],
+            "headsign": "Cedarview M.S - Half Moon Bay"
+        },
+        {
+            "route_id": "686",
+            "shape_id": [
+                "6860021"
+            ],
+            "headsign": "Baseline"
+        },
+        {
+            "route_id": "688",
+            "shape_id": [
+                "6880021",
+                "6880046"
+            ],
+            "headsign": "Terry Fox - Merivale H.S"
+        },
+        {
+            "route_id": "689",
+            "shape_id": [
+                "6890026",
+                "6890034",
+                "6890050"
+            ],
+            "headsign": "Billings Bridge - Omer-Deslaurier H.S"
+        },
+        {
+            "route_id": "691",
+            "shape_id": [
+                "6910243",
+                "6910245"
+            ],
+            "headsign": "Bayshore - Deslauriers"
+        },
+        {
+            "route_id": "693",
+            "shape_id": [
+                "6930013",
+                "6930010"
+            ],
+            "headsign": "St. Francis Xavier H.S - Blossom Park"
+        },
+        {
+            "route_id": "698",
+            "shape_id": [
+                "6980170",
+                "6980171",
+                "6980113",
+                "6980114"
+            ],
+            "headsign": "St Patrick H.S - Blohm"
+        },
+        {
+            "route_id": "699",
+            "shape_id": [
+                "6990039",
+                "6990038"
+            ],
+            "headsign": "Pierre-de-Blois - Findlay Creek"
+        },
+        {
+            "route_id": "E1",
+            "shape_id": [
+                "E10017",
+                "E10004"
+            ],
+            "headsign": "Shuttle/Navette-Express Downtown/Centre-Ville - Shuttle/Navette-Express Blair"
+        }
+    ]
+}

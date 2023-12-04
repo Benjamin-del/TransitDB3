@@ -7,11 +7,12 @@ const trips = require("./cond/sto_trips")
 const stop_times = require("./cond/sto_stop_times")
 const download = require("./mods/dwldr")
 
+const parse_routes = require("./cond/sto_agency_routes")
 process.argv.forEach(async (x)=>{
     const dts = x.split("=")
     if (dts[0] === "file") {
         console.log("UPDATE (INDEX): File passed to args")
-        if (dts[1] === "trips.txt" || dts[1] === "stop_times.txt") {
+        if (dts[1] === "trips.txt" || dts[1] === "stop_times.txt" || dts[1] === "parse_routes.json") {
             console.log("UPDATE (INDEX): Condensing File...")
             if (dts[1] === "trips.txt") {             /* Special file trips.txt */
                 const tps = await trips.parse()
@@ -19,7 +20,11 @@ process.argv.forEach(async (x)=>{
             } else if (dts[1] === "stop_times.txt") { /* Special file stop_times.txt */
                 const tms = await stop_times.parse()
                 prepfile("stop_times.txt",tms)
-            } 
+            } else if (dts[1] === "parse_routes.json") { /* This file is not in the GTFS spec */
+                console.log("CUSTOM!")
+                const rts = await parse_routes.parse()
+                await gh.push("sto", "routes.json", JSON.stringify(rts, null, 4))
+            }
         } else {
             const content = await download.file(dts[1], "sto")
             prepfile(dts[1], content)
