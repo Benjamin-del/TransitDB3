@@ -30,6 +30,8 @@ jobs:
         node oct.js file=routes.txt
         node oct.js file=shapes.txt
         node oct.js file=stops.txt
+    - name: Custom Route Map (OC Transpo)
+      run: node oct.js file=parse_routes.json
     - name: Update STO Data
       run: |
         node sto.js file=trips.txt
@@ -38,6 +40,8 @@ jobs:
         node sto.js file=routes.txt
         node sto.js file=shapes.txt
         node sto.js file=stops.txt
+    - name: Custom Route Map (STO)
+      run: node sto.js file=parse_routes.json
     - name: Finish Update
       run: node update.js
     - name: Upload artifact
