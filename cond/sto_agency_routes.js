@@ -32,7 +32,8 @@ module.exports = {
             return acc;
         }, {});
 
-        const result = Object.keys(uniqueTrips).map(route_id => ({ route_id, shape_id: uniqueTrips[route_id].shape_ids, headsign: uniqueTrips[route_id].headsigns })); console.log("result", result)
+        const result = Object.keys(uniqueTrips).map(route_id => ({ route_id, shape_id: uniqueTrips[route_id].shape_ids, headsign: uniqueTrips[route_id].headsigns })); 
+        //console.log("result", result)
 
         console.log("HELPER (TRIPS): File condensed")
         return { agency: "STO", routes: result }
