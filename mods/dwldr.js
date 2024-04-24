@@ -12,7 +12,7 @@ module.exports = {
                     return "https://oct-gtfs-emasagcnfmcgeham.z01.azurefd.net/public-access/GTFSExport.zip"
                 } else if (ag === "sto") {
                     return "http://www.contenu.sto.ca/GTFS/GTFS.zip"
-                } else {
+                }  else {
                     throw new Error("HELPER (GTFS-DWLDR): ERROR: Invalid Agency")
                 }
             }
