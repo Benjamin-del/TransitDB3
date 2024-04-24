@@ -9,11 +9,9 @@ module.exports = {
 
             function getURL() {
                 if (ag === "oct") {
-                    return "https://www.octranspo.com/files/google_transit.zip"
+                    return "https://oct-gtfs-emasagcnfmcgeham.z01.azurefd.net/public-access/GTFSExport.zip"
                 } else if (ag === "sto") {
                     return "http://www.contenu.sto.ca/GTFS/GTFS.zip"
-                } else if (ag === "via") {
-                    return "https://www.viarail.ca/sites/all/files/gtfs/viarail.zip"
                 } else {
                     throw new Error("HELPER (GTFS-DWLDR): ERROR: Invalid Agency")
                 }
