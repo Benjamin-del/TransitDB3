@@ -19,53 +19,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     # Setup the pages
-    - name: Setup Pages
-      id: pages
-      uses: actions/configure-pages@v3
     - name: Update OC Transpo Data
       run: |
-        node oct.js file=trips.txt
-        node oct.js file=stop_times.txt
-        node oct.js file=calendar.txt
-        node oct.js file=routes.txt
-        node oct.js file=shapes.txt
-        node oct.js file=stops.txt
-    - name: Custom Route Map (OC Transpo)
-      run: node oct.js file=parse_routes.json
-    - name: Update STO Data
-      run: |
-        node sto.js file=trips.txt
-        node sto.js file=stop_times.txt
-        node sto.js file=calendar_dates.txt
-        node sto.js file=routes.txt
-        node sto.js file=shapes.txt
-        node sto.js file=stops.txt
-    - name: Custom Route Map (STO)
-      run: node sto.js file=parse_routes.json
-    - name: Finish Update
-      run: node update.js
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v2
-      with: 
-        path: ./
-        retention-days: 1
-  deploy:
-    # Make sure the API token has the required scopes
-    permissions:
-      contents: read
-      pages: write
-      id-token: write 
-    # Setup GH Pages  
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
-    # This job runs on the latest version of ubuntu
-    runs-on: ubuntu-latest
-    # This job runs after the build job
-    needs: build
-    # Deploy to GH Pages
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
-
+        npm install
+        npx prisma generate
+        node main.js
+      env:
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}

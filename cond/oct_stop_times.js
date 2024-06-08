@@ -7,18 +7,19 @@ module.exports = {
         if (times.includes("ERROR-")) {
             throw new Error("UPDATE (STOP_TIMES): ERROR: " + times)
         }
-        const tms = times.map(x => {
+        const tms = times.filter((x) => {
+            return x !== ""
+        }).map(x => {
             const dts = x.split(",")
-            if (dts[0]) {
-            // Modify Collunms
             const tp_id = dts[0].split("-")[0]
-            //console.log(tp_id)
-            return tp_id + "," + dts[1] + "," + dts[3] + "," +  dts[4]
-            
-            } else {
-                return ""
-            }
-            
+            //trip_id,arrival_time,stop_id,stop_sequence
+
+            return {
+                trip_id: tp_id,
+                arrival_time: dts[1],
+                stop_id: dts[3],
+                stop_sequence: dts[4]
+            }         
         })
         return tms
     }

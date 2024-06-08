@@ -1,0 +1,45 @@
+{
+    "agencies": [
+        {
+            "id":"oct",
+            "url":"https://oct-gtfs-emasagcnfmcgeham.z01.azurefd.net/public-access/GTFSExport.zip",
+            "tables":[
+                {
+                    "db_name":"oc_stops",
+                    "file":"stops.txt",
+                    "active":false
+                },
+                {
+                    "db_name":"oc_trips",
+                    "file":"trips.txt",
+                    "active":false
+                },
+                {
+                    "db_name":"oc_stop_times",
+                    "file":"stop_times.txt",
+                    "active":false
+                },
+                {
+                    "db_name":"oc_routes",
+                    "file":"routes.txt",
+                    "active":false
+                },
+                {
+                    "db_name":"oc_calendar",
+                    "file":"calendar.txt",
+                    "active":true
+                },
+                {
+                    "db_name":"oc_calendar_dates",
+                    "file":"calendar_dates.txt",
+                    "active":true
+                },
+                {
+                    "db_name":"oc_shapes",
+                    "file":"shapes.txt",
+                    "active":true
+                }
+            ]
+        }
+    ]
+}
