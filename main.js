@@ -91,7 +91,7 @@ async function parseTable(ag) {
         }
 
         // Example usage
-        const chunkSize = 10000; 
+        const chunkSize = 5000; 
         insertDataInChunks(data, chunkSize);
 
     }
