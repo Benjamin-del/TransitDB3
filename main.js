@@ -74,7 +74,7 @@ async function parseTable(ag) {
             return chunks;
         }
 
-        async function insertDataInChunks(data, chunkSize) {
+        async function insertDataInChunks(data, chunkSize, tableIF) {
             const chunks = chunkArray(data, chunkSize);
 
             for (const chunk of chunks) {
@@ -84,6 +84,12 @@ async function parseTable(ag) {
                     });
                     console.log(`${dataInsert.count} records inserted.`);
                 } catch (error) {
+                    const errorTXT = chunk.map((x) => {
+                        return x.trip_id
+                    }).join(", ")
+                    
+                    fs.writeFileSync("error.txt", errorTXT)
+                    console.log(tableIF)
                     console.error('Error inserting data chunk:', error);
                     throw new Error('Error inserting data chunk:', error);
                 }
@@ -91,8 +97,8 @@ async function parseTable(ag) {
         }
 
         // Example usage
-        const chunkSize = 5000; 
-        insertDataInChunks(data, chunkSize);
+        const chunkSize = 5000;  //CHANGE BACK TO 5000
+        insertDataInChunks(data, chunkSize, table.db_name);
 
     }
 }

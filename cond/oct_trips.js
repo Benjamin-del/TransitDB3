@@ -18,9 +18,9 @@ module.exports = {
                 //route_id (0),service_id (1),trip_id (2),trip_headsign (3) ,trip_short_name (4),direction_id (5),block_id (6),shape_id (7),wheelchair_accessible,bikes_allowed
                 //route_id,service_id,trip_id,trip_headsign,direction_id,block_id,shape_id
                 return {
-                    route_id: rt_id,
+                    route_id: dts[0],
                     service_id: dts[1],
-                    trip_id: tp_id,
+                    trip_id: dts[2],
                     trip_headsign: dts[3],
                     direction_id: dts[5],
                     block_id: dts[6],

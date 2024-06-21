@@ -15,7 +15,7 @@ module.exports = {
             //trip_id,arrival_time,stop_id,stop_sequence
 
             return {
-                trip_id: tp_id,
+                trip_id: dts[0],
                 arrival_time: dts[1],
                 stop_id: dts[3],
                 stop_sequence: dts[4]
