@@ -7,7 +7,7 @@
                 {
                     "db_name":"oc_stops",
                     "file":"stops.txt",
-                    "active":false
+                    "active":true
                 },
                 {
                     "db_name":"oc_trips",
@@ -22,22 +22,22 @@
                 {
                     "db_name":"oc_routes",
                     "file":"routes.txt",
-                    "active":false
+                    "active":true
                 },
                 {
                     "db_name":"oc_calendar",
                     "file":"calendar.txt",
-                    "active":false
+                    "active":true
                 },
                 {
                     "db_name":"oc_calendar_dates",
                     "file":"calendar_dates.txt",
-                    "active":false
+                    "active":true
                 },
                 {
                     "db_name":"oc_shapes",
                     "file":"shapes.txt",
-                    "active":false
+                    "active":true
                 }
             ]
         }

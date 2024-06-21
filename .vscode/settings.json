@@ -1,2 +1,5 @@
 {
+    "github-actions.workflows.pinned.workflows": [
+        ".github/workflows/job.yml"
+    ]
 }

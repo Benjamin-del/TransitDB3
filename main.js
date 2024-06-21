@@ -62,6 +62,7 @@ async function parseTable(ag) {
 
         // Delete all rows from the table
         await prisma[table.db_name].deleteMany()
+        console.log("Deleted all rows from " + table.db_name)
         // Parse the file
         const data = await findParseModule(table.file)
         // Insert the data
