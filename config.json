@@ -12,7 +12,7 @@
                 {
                     "db_name":"oc_trips",
                     "file":"trips.txt",
-                    "active":false
+                    "active":true
                 },
                 {
                     "db_name":"oc_stop_times",
