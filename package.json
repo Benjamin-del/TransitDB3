@@ -7,15 +7,17 @@
   },
   "dependencies": {
     "@octokit/core": "^5.0.1",
-    "@prisma/client": "^5.15.0",
     "dotenv": "^16.3.1",
     "jszip": "^3.10.1",
     "node-fetch": "^2.7.0",
     "octokit": "^3.1.1",
-    "pg": "^8.12.0",
-    "prisma": "^5.15.0"
+    "pg": "^8.12.0"
   },
   "author": "benjamin-del",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@prisma/client": "^5.19.1",
+    "prisma": "^5.19.1"
+  }
 }
