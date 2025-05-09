@@ -6,7 +6,7 @@ run-name: Update GTFS database
 
 on:
   schedule:
-    - cron: '0 1 * * *'
+    - cron: '0 5 * * *'  # 1:00 AM EDT / 12:00 AM EST
   workflow_dispatch:
   #push:
   # Remove Push as it is interfering with GH pages deployment
