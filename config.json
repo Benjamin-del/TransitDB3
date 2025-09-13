@@ -7,37 +7,44 @@
                 {
                     "db_name":"oc_stops",
                     "file":"stops.txt",
-                    "active":true
+                    "active":true,
+                    "slice_key":"trip_id"
                 },
                 {
                     "db_name":"oc_trips",
                     "file":"trips.txt",
-                    "active":true
+                    "active":true,
+                    "slice_key":"route_id"
                 },
                 {
                     "db_name":"oc_stop_times",
                     "file":"stop_times.txt",
-                    "active":true
+                    "active":true,
+                    "slice_key":"trip_id"
                 },
                 {
                     "db_name":"oc_routes",
                     "file":"routes.txt",
-                    "active":true
+                    "active":true,
+                    "slice_key": "route_id"
                 },
                 {
                     "db_name":"oc_calendar",
                     "file":"calendar.txt",
-                    "active":true
+                    "active":true,
+                    "slice_key":"service_id"
                 },
                 {
                     "db_name":"oc_calendar_dates",
                     "file":"calendar_dates.txt",
-                    "active":true
+                    "active":true,
+                    "slice_key":"service_id"
                 },
                 {
                     "db_name":"oc_shapes",
                     "file":"shapes.txt",
-                    "active":true
+                    "active":true,
+                    "slice_key":"shape_id"
                 }
             ]
         }

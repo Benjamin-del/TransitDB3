@@ -20,24 +20,23 @@ agConfig.agencies.forEach(async (ag) => {
 })
 
 async function findParseModule(file) {
-    if (file === "stops.txt") {
+    if (file.file === "stops.txt") {
         return await stop_locations.parse()
-    } else if (file === "trips.txt") {
+    } else if (file.file === "trips.txt") {
         return await trips.parse()
-    } else if (file === "stop_times.txt") {
+    } else if (file.file === "stop_times.txt") {
         return await stop_times.parse()
-    } else if (file === "routes.txt") {
+    } else if (file.file === "routes.txt") {
         return await routes.parse()
     } else {
-        console.log("No parse module found for " + file)
-        const data = await dwldr.file(file, "oct")
+        console.log("No parse module found for " + file.file)
+        const data = await dwldr.file(file.file, "oct", 1)
         
         const rows = data.filter((x) => {
-            return x !== ""
+            return x && x.trim() !== "" 
         }).map((x) => {
             return x.replace(/\r/g, '')
         })
-
         
         function transformToObj(keys, rows) {
             return rows.map(row => {
@@ -48,7 +47,7 @@ async function findParseModule(file) {
                     resultObj[key] = row[index].replace(/"/g, '');
                 });
                 return resultObj;
-            });
+            }).filter((row) => row[file.slice_key] !== file.slice_key)
         }
         return transformToObj(rows[0].split(","), rows)
     }
@@ -64,7 +63,7 @@ async function parseTable(ag) {
         await prisma[table.db_name].deleteMany()
         console.log("Deleted all rows from " + table.db_name)
         // Parse the file
-        const data = await findParseModule(table.file)
+        const data = await findParseModule(table)
         // Insert the data
 
         function chunkArray(data, chunkSize) {

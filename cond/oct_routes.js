@@ -9,7 +9,7 @@ module.exports = {
 
         }
         const rts = routes.filter((x) => {
-            return x !== ""
+            return x !== "" || x.split(",")[0] !== "route_id"
         }).map(x => {
             const dts = x.split(",")
             //route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,continuous_pickup,continuous_drop_off,network_id

@@ -7,7 +7,7 @@ module.exports = {
             throw new Error("UPDATE (TRIPS): ERROR: " + times)
         }
         return stops.filter((x) => {
-            return x !== "" || x.split(",")[0] !== "stop_id"
+            return x && x.trim() !== "" && x.split(",")[0] !== "stop_id"
         }).map(x => {
             const dts = x.split(",")
             return {

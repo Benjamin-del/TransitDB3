@@ -1,5 +1,3 @@
-const { Octokit } = require("@octokit/core");
-const config = require("./../gh_config.json");
 const fs = require('fs');
 
 module.exports = {

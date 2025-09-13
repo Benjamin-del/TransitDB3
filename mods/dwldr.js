@@ -1,7 +1,7 @@
 var JSZip = require("jszip");
 
 module.exports = {
-    file: async function (file, ag) {
+    file: async function (file, ag, slice = 0) {
         console.log(ag)
         try {
             console.log("HELPER (GTFS-DWLDR): Fetching file: " + file)
@@ -37,7 +37,7 @@ module.exports = {
             const tripsTxtFile = await zip.file(file).async('text');
             // Return the contents of the "trips.txt" file as the response
             console.log("File Returned")
-            return tripsTxtFile.split("\n");
+            return tripsTxtFile.split("\n")
         } catch (error) {
             console.log(error)
             return "ERROR-500"

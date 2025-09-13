@@ -8,7 +8,7 @@ module.exports = {
             throw new Error("UPDATE (STOP_TIMES): ERROR: " + times)
         }
         const tms = times.filter((x) => {
-            return x !== ""
+            return x && x.trim() !== "" && x.split(",")[0] !== "trip_id"
         }).map(x => {
             const dts = x.split(",")
             const tp_id = dts[0].split("-")[0]

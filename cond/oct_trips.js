@@ -9,12 +9,12 @@ module.exports = {
 
         }
         const tps = trips.filter((x) => {
-            return x !== ""
+            return x && x.trim() !== "" && x.split(",")[0] !== "route_id"
         }).map(x => {
             const dts = x.split(",")
                 // Modify Collunms
-                const rt_id = dts[0].split("-")[0]
-                const tp_id = dts[2].split("-")[0]
+                //const rt_id = dts[0].split("-")[0]
+                //const tp_id = dts[2].split("-")[0]
                 //route_id (0),service_id (1),trip_id (2),trip_headsign (3) ,trip_short_name (4),direction_id (5),block_id (6),shape_id (7),wheelchair_accessible,bikes_allowed
                 //route_id,service_id,trip_id,trip_headsign,direction_id,block_id,shape_id
                 return {
