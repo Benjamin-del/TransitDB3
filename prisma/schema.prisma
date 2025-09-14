@@ -50,7 +50,7 @@ model oc_stop_times {
   trip_id       String
   arrival_time  String?
   stop_id       String?
-  stop_sequence String
+  stop_sequence Int
 
   @@id([trip_id, stop_sequence])
 }
